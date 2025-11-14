@@ -26,6 +26,11 @@
         //     total += item.price * item.quantity;
         // }
     }
+
+    // Tăng giảm số lượng
+    const inCreamentQuantity = (index) => {
+        list_foods[index].quantity++;
+    } 
 </script>
 <template>
     <div class="container">
@@ -71,7 +76,11 @@
                     <td>{{ food.id }}</td>
                     <td>{{ food.name }}</td>
                     <td>{{ food.price }}</td>
-                    <td>{{ food.quantity }}</td>
+                    <td>
+                        <button type="submit" class="btn" @click="food.quantity--"> - </button>
+                        <input type="text" class="form-control" v-model="food.quantity">
+                        <button type="submit" class="btn" @click="inCreamentQuantity(index)"> + </button>
+                    </td>
                     <td>{{ (food.price * food.quantity).toFixed(2) }}</td>
                 </tr>
             </tbody>
