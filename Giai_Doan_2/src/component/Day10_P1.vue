@@ -44,7 +44,7 @@ const fetchData = async () => {
 }
 // Hàm xóa dữ liệu
 const clearItems = () => {
-    items = ref([]);
+    items.value = [];
 }
 </script>
 <template>

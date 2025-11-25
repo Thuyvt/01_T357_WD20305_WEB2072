@@ -1,0 +1,41 @@
+{
+    "categories" : [
+        {
+            "id": 1,
+            "name": "Trà sữa truyền thống"
+        },
+        {
+            "id": 2,
+            "name": "Cafe truyền thống"
+        }
+    ],
+    "products" : [
+        {
+            "id": 1,
+            "name": "Cafe đen",
+            "category_id": 1,
+            "description": "Cafe đen nguyên chất",
+            "price": 15000,
+            "quantity": 100,
+            "status": true
+        },
+        {
+            "id": 2,
+            "name": "Cafe nâu",
+            "category_id": 1,
+            "description": "Cafe đen nguyên chất",
+            "price": 15000,
+            "quantity": 100,
+            "status": true
+        },
+        {
+            "id": 3,
+            "name": "Bạc xỉu",
+            "category_id": 1,
+            "description": "Bạc xỉu",
+            "price": 15000,
+            "quantity": 100,
+            "status": true
+        }
+    ]
+}
