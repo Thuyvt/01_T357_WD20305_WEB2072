@@ -9,6 +9,9 @@
                     <li class="nav-item">
                         <RouterLink to="/list-product" class="nav-link">Quản lý sản phẩm</RouterLink>
                     </li>
+                     <li class="nav-item">
+                        <RouterLink to="/Day5" class="nav-link">Day 5</RouterLink>
+                    </li>
                 </ul>
             </div>
         </nav>
