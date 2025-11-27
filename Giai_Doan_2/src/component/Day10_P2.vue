@@ -8,6 +8,18 @@
         const response = await instanceAxios.get("products");
         products.value = response.data;
     } 
+
+    // Xóa sản phẩm 
+    const deleteProduct = async(proId) => {
+        let isConfirm = confirm("Có chắc muốn xóa không");
+        if (!isConfirm) return;
+        // Gọi đến API thực hiện xóa
+        let response = await instanceAxios.delete(`products/${proId}`);
+        console.log(response);
+        // load dữ liệu
+        fetchData();
+    }
+    
     // Gọi khi component vừa load xong
     onMounted(() => {
         fetchData();
@@ -38,7 +50,7 @@
                 <td>{{ p.quantity }}</td>
                 <td>{{ p.status }}</td>
                 <td>
-                    <button class="btn btn-danger me-2" @click="deleteProduct(index)">Xóa</button>
+                    <button class="btn btn-danger me-2" @click="deleteProduct(p.id)">Xóa</button>
                     <button class="btn btn-info" @click="showProduct(p.id)">Xem</button>
 
                 </td>

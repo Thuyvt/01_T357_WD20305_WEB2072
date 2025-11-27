@@ -1,41 +1,68 @@
 {
-    "categories" : [
-        {
-            "id": 1,
-            "name": "Trà sữa truyền thống"
-        },
-        {
-            "id": 2,
-            "name": "Cafe truyền thống"
-        }
-    ],
-    "products" : [
-        {
-            "id": 1,
-            "name": "Cafe đen",
-            "category_id": 1,
-            "description": "Cafe đen nguyên chất",
-            "price": 15000,
-            "quantity": 100,
-            "status": true
-        },
-        {
-            "id": 2,
-            "name": "Cafe nâu",
-            "category_id": 1,
-            "description": "Cafe đen nguyên chất",
-            "price": 15000,
-            "quantity": 100,
-            "status": true
-        },
-        {
-            "id": 3,
-            "name": "Bạc xỉu",
-            "category_id": 1,
-            "description": "Bạc xỉu",
-            "price": 15000,
-            "quantity": 100,
-            "status": true
-        }
-    ]
+  "categories": [
+    {
+      "id": "1",
+      "name": "Trà sữa truyền thống"
+    },
+    {
+      "id": "2",
+      "name": "Cafe truyền thống"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Cafe đen",
+      "category_id": 1,
+      "description": "Cafe đen nguyên chất",
+      "price": 15000,
+      "quantity": 100,
+      "status": true
+    },
+    {
+      "id": "2",
+      "name": "Cafe nâu",
+      "category_id": 1,
+      "description": "Cafe đen nguyên chất",
+      "price": 15000,
+      "quantity": 100,
+      "status": true
+    },
+    {
+      "id": "3",
+      "name": "Bạc xỉu",
+      "category_id": 1,
+      "description": "Bạc xỉu",
+      "price": 15000,
+      "quantity": 100,
+      "status": true
+    },
+    {
+      "id": 0,
+      "name": "sản phẩm 1",
+      "category_id": "2",
+      "description": "123123",
+      "price": 12,
+      "quantity": 12,
+      "status": true
+    },
+    {
+      "id": "",
+      "name": "111",
+      "category_id": "2",
+      "description": "121212",
+      "price": 1212,
+      "quantity": 1212,
+      "status": false
+    },
+    {
+      "id": "e83f",
+      "name": "a",
+      "category_id": "1",
+      "description": "a",
+      "price": 123123,
+      "quantity": 123123,
+      "status": false
+    }
+  ]
 }
