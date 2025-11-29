@@ -51,8 +51,11 @@
                 <td>{{ p.status }}</td>
                 <td>
                     <button class="btn btn-danger me-2" @click="deleteProduct(p.id)">Xóa</button>
-                    <button class="btn btn-info" @click="showProduct(p.id)">Xem</button>
-
+                    <RouterLink :to="{name: 'show', params: {id: p.id}}" class="btn btn-info me-2">Xem</RouterLink>
+                    <!-- <button class="btn btn-primary">
+                    </button> -->
+                    <RouterLink :to="{name: 'update', params: {id: p.id}}"
+                    class="btn btn-warning me-2">Sửa</RouterLink>
                 </td>
             </tr>
         </tbody>

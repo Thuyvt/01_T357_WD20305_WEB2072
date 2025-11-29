@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Day10_P1 from '@/component/Day10_P1.vue';
 import Day10_P2 from '@/component/Day10_P2.vue';
 import CreateView from '@/component/CreateView.vue';
+import UpdateView from '@/component/UpdateView.vue';
+import ShowView from '@/component/ShowView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +22,16 @@ const router = createRouter({
       path: '/create',
       name: 'create',
       component: CreateView
+    },
+    {
+      path: '/update/:id',
+      name: 'update',
+      component: UpdateView
+    },
+    {
+      path: '/show/:id',
+      name: 'show',
+      component: ShowView
     }
   ],
 })

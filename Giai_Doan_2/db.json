@@ -12,12 +12,12 @@
   "products": [
     {
       "id": "1",
-      "name": "Cafe đen",
+      "name": "Cafe đen update 1",
       "category_id": 1,
       "description": "Cafe đen nguyên chất",
       "price": 15000,
       "quantity": 100,
-      "status": true
+      "status": false
     },
     {
       "id": "2",
@@ -38,7 +38,7 @@
       "status": true
     },
     {
-      "id": 0,
+      "id": "4",
       "name": "sản phẩm 1",
       "category_id": "2",
       "description": "123123",
@@ -47,7 +47,7 @@
       "status": true
     },
     {
-      "id": "",
+      "id": "5",
       "name": "111",
       "category_id": "2",
       "description": "121212",
